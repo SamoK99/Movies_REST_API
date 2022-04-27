@@ -5,8 +5,8 @@ const {verifyToken} = require("../validation");
 // CRUD operations
 
 // Create movie - post
-//router.post("/", verifyToken, (req, res) => {
-router.post("/", (req, res) => {
+router.post("/", verifyToken, (req, res) => {
+//router.post("/", (req, res) => {
     data = req.body;
 
     movie.insertMany(data)
