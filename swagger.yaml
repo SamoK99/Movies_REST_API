@@ -6,6 +6,8 @@ info:
 servers:
   - url: http://localhost:4000/api/
     description: Localhost development server 
+  - url: https://movie-budget.herokuapp.com/api/
+    description: Heroku
 components:
   securitySchemes:
     ApiKeyAuth:        # arbitrary name for the security scheme
